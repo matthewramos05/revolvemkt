@@ -51,15 +51,19 @@
   </header>
 
   <!-- Hero -->
-  <section class="bg-[url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center h-[600px] flex items-center" id="home">
-    <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 text-white">
-      <h1 class="text-4xl sm:text-5xl font-extrabold mb-4 drop-shadow-lg">We Create Impactful Brand Experiences</h1>
-      <p class="text-xl sm:text-2xl mb-8 drop-shadow-md">Experiential, Retail, Digital, and Talent Integration</p>
+  <section id="home" class="relative h-screen overflow-hidden">
+    <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover -z-10">
+      <source src="https://orcavue.com/wp-content/uploads/OrcaVue-Home-Banner-Video-360-and-Glambot.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-white px-4 text-center">
+      <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 drop-shadow-lg">We Create Impactful Brand Experiences</h1>
+      <p class="text-xl sm:text-2xl drop-shadow-md">Experiential, Retail, Digital, and Talent Integration</p>
     </div>
   </section>
 
   <!-- About Us -->
-  <section class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center" id="about">
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center" id="about">
     <div>
       <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80" alt="Team working" class="rounded-lg shadow-lg" />
     </div>
@@ -77,36 +81,36 @@
   </section>
 
   <!-- Services -->
-  <section class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 py-16" id="services">
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20" id="services">
     <h2 class="text-3xl font-bold mb-12 text-center">Our Services</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
       <div class="flex flex-col items-center text-center">
-        <img src="https://via.placeholder.com/80" alt="Event Production Icon" class="mb-4" />
+        <img src="https://placehold.co/80x80" alt="Event Production Icon" class="mb-4" />
         <h3 class="text-xl font-semibold mb-2">Event Production</h3>
         <p class="text-gray-600">Creating seamless and memorable live experiences that engage audiences.</p>
       </div>
       <div class="flex flex-col items-center text-center">
-        <img src="https://via.placeholder.com/80" alt="Retail Programming Icon" class="mb-4" />
+        <img src="https://placehold.co/80x80" alt="Retail Programming Icon" class="mb-4" />
         <h3 class="text-xl font-semibold mb-2">Retail Programming</h3>
         <p class="text-gray-600">Designing immersive retail activations that drive foot traffic and sales.</p>
       </div>
       <div class="flex flex-col items-center text-center">
-        <img src="https://via.placeholder.com/80" alt="Digital Campaigns Icon" class="mb-4" />
+        <img src="https://placehold.co/80x80" alt="Digital Campaigns Icon" class="mb-4" />
         <h3 class="text-xl font-semibold mb-2">Digital Campaigns</h3>
         <p class="text-gray-600">Crafting compelling digital content and campaigns for maximum impact.</p>
       </div>
       <div class="flex flex-col items-center text-center">
-        <img src="https://via.placeholder.com/80" alt="Brand Strategy Icon" class="mb-4" />
+        <img src="https://placehold.co/80x80" alt="Brand Strategy Icon" class="mb-4" />
         <h3 class="text-xl font-semibold mb-2">Brand Strategy</h3>
         <p class="text-gray-600">Developing strategic frameworks that align brand vision and goals.</p>
       </div>
       <div class="flex flex-col items-center text-center">
-        <img src="https://via.placeholder.com/80" alt="Artist Partnerships Icon" class="mb-4" />
+        <img src="https://placehold.co/80x80" alt="Artist Partnerships Icon" class="mb-4" />
         <h3 class="text-xl font-semibold mb-2">Artist Partnerships</h3>
         <p class="text-gray-600">Connecting brands with artists to create authentic collaborations.</p>
       </div>
       <div class="flex flex-col items-center text-center">
-        <img src="https://via.placeholder.com/80" alt="Tech Integration Icon" class="mb-4" />
+        <img src="https://placehold.co/80x80" alt="Tech Integration Icon" class="mb-4" />
         <h3 class="text-xl font-semibold mb-2">Tech Integration</h3>
         <p class="text-gray-600">Leveraging technology to enhance brand experiences and engagement.</p>
       </div>
@@ -114,7 +118,7 @@
   </section>
 
   <!-- Featured Work -->
-  <section class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 py-16" id="work">
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20" id="work">
     <h2 class="text-3xl font-bold mb-8 text-center">Featured Work</h2>
     <div class="flex justify-center space-x-4 mb-12">
       <button class="px-4 py-2 bg-indigo-600 text-white rounded-md font-semibold hover:bg-indigo-700 transition">All</button>
@@ -177,7 +181,7 @@
   
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-300 py-16">
+  <footer class="bg-gray-900 text-gray-300 px-4 sm:px-6 lg:px-8 py-20">
     <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
       <div>
         <h4 class="text-2xl font-bold mb-4 text-white">AGENCY</h4>
