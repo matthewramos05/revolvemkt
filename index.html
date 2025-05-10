@@ -8,22 +8,19 @@
 </head>
 <body class="font-sans text-gray-800">
   <!-- Navigation -->
-  <header class="bg-white shadow">
+  <header class="bg-white shadow sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16 items-center">
         <div class="flex-shrink-0 text-2xl font-bold text-gray-900">
           AGENCY
         </div>
         <nav class="hidden md:flex space-x-8">
-          <a href="#" class="text-gray-700 hover:text-gray-900 font-medium">Home</a>
-          <a href="#" class="text-gray-700 hover:text-gray-900 font-medium">Work</a>
-          <a href="#" class="text-gray-700 hover:text-gray-900 font-medium">Services</a>
-          <a href="#" class="text-gray-700 hover:text-gray-900 font-medium">About</a>
-          <a href="#" class="text-gray-700 hover:text-gray-900 font-medium">Team</a>
-          <a href="#" class="text-gray-700 hover:text-gray-900 font-medium">Contact</a>
+          <a href="#home" class="text-gray-700 hover:text-gray-900 font-medium">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-gray-900 font-medium">About</a>
+          <a href="#services" class="text-gray-700 hover:text-gray-900 font-medium">Services</a>
+          <a href="#work" class="text-gray-700 hover:text-gray-900 font-medium">Work</a>
         </nav>
         <div class="hidden md:block">
-          <a href="#" class="inline-block bg-indigo-600 text-white px-5 py-2 rounded-md text-sm font-semibold hover:bg-indigo-700 transition">Let's Talk</a>
         </div>
         <div class="md:hidden">
           <!-- Mobile menu button -->
@@ -38,13 +35,10 @@
     <!-- Mobile menu -->
     <div class="md:hidden hidden" id="mobile-menu">
       <nav class="px-2 pt-2 pb-4 space-y-1 bg-white shadow">
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">Home</a>
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">Work</a>
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">Services</a>
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">About</a>
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">Team</a>
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">Contact</a>
-        <a href="#" class="block w-full text-center bg-indigo-600 text-white px-3 py-2 rounded-md text-base font-semibold hover:bg-indigo-700">Let's Talk</a>
+        <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">Home</a>
+        <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">About</a>
+        <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">Services</a>
+        <a href="#work" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">Work</a>
       </nav>
     </div>
     <script>
@@ -57,16 +51,19 @@
   </header>
 
   <!-- Hero -->
-  <section class="bg-[url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center h-[600px] flex items-center">
-    <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 text-white">
-      <h1 class="text-4xl sm:text-5xl font-extrabold mb-4 drop-shadow-lg">We Create Impactful Brand Experiences</h1>
-      <p class="text-xl sm:text-2xl mb-8 drop-shadow-md">Experiential, Retail, Digital, and Talent Integration</p>
-      <a href="#" class="inline-block bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-md font-semibold text-lg drop-shadow-md transition">Explore Our Work</a>
+  <section id="home" class="relative h-screen overflow-hidden">
+    <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover -z-10">
+      <source src="https://orcavue.com/wp-content/uploads/OrcaVue-Home-Banner-Video-360-and-Glambot.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-white px-4 text-center">
+      <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 drop-shadow-lg">We Create Impactful Brand Experiences</h1>
+      <p class="text-xl sm:text-2xl drop-shadow-md">Experiential, Retail, Digital, and Talent Integration</p>
     </div>
   </section>
 
   <!-- About Us -->
-  <section class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center" id="about">
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center" id="about">
     <div>
       <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80" alt="Team working" class="rounded-lg shadow-lg" />
     </div>
@@ -84,36 +81,36 @@
   </section>
 
   <!-- Services -->
-  <section class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 py-16" id="services">
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20" id="services">
     <h2 class="text-3xl font-bold mb-12 text-center">Our Services</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
       <div class="flex flex-col items-center text-center">
-        <img src="https://via.placeholder.com/80" alt="Event Production Icon" class="mb-4" />
+        <img src="https://placehold.co/80x80" alt="Event Production Icon" class="mb-4" />
         <h3 class="text-xl font-semibold mb-2">Event Production</h3>
         <p class="text-gray-600">Creating seamless and memorable live experiences that engage audiences.</p>
       </div>
       <div class="flex flex-col items-center text-center">
-        <img src="https://via.placeholder.com/80" alt="Retail Programming Icon" class="mb-4" />
+        <img src="https://placehold.co/80x80" alt="Retail Programming Icon" class="mb-4" />
         <h3 class="text-xl font-semibold mb-2">Retail Programming</h3>
         <p class="text-gray-600">Designing immersive retail activations that drive foot traffic and sales.</p>
       </div>
       <div class="flex flex-col items-center text-center">
-        <img src="https://via.placeholder.com/80" alt="Digital Campaigns Icon" class="mb-4" />
+        <img src="https://placehold.co/80x80" alt="Digital Campaigns Icon" class="mb-4" />
         <h3 class="text-xl font-semibold mb-2">Digital Campaigns</h3>
         <p class="text-gray-600">Crafting compelling digital content and campaigns for maximum impact.</p>
       </div>
       <div class="flex flex-col items-center text-center">
-        <img src="https://via.placeholder.com/80" alt="Brand Strategy Icon" class="mb-4" />
+        <img src="https://placehold.co/80x80" alt="Brand Strategy Icon" class="mb-4" />
         <h3 class="text-xl font-semibold mb-2">Brand Strategy</h3>
         <p class="text-gray-600">Developing strategic frameworks that align brand vision and goals.</p>
       </div>
       <div class="flex flex-col items-center text-center">
-        <img src="https://via.placeholder.com/80" alt="Artist Partnerships Icon" class="mb-4" />
+        <img src="https://placehold.co/80x80" alt="Artist Partnerships Icon" class="mb-4" />
         <h3 class="text-xl font-semibold mb-2">Artist Partnerships</h3>
         <p class="text-gray-600">Connecting brands with artists to create authentic collaborations.</p>
       </div>
       <div class="flex flex-col items-center text-center">
-        <img src="https://via.placeholder.com/80" alt="Tech Integration Icon" class="mb-4" />
+        <img src="https://placehold.co/80x80" alt="Tech Integration Icon" class="mb-4" />
         <h3 class="text-xl font-semibold mb-2">Tech Integration</h3>
         <p class="text-gray-600">Leveraging technology to enhance brand experiences and engagement.</p>
       </div>
@@ -121,7 +118,7 @@
   </section>
 
   <!-- Featured Work -->
-  <section class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 py-16" id="work">
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20" id="work">
     <h2 class="text-3xl font-bold mb-8 text-center">Featured Work</h2>
     <div class="flex justify-center space-x-4 mb-12">
       <button class="px-4 py-2 bg-indigo-600 text-white rounded-md font-semibold hover:bg-indigo-700 transition">All</button>
@@ -181,34 +178,20 @@
     </div>
   </section>
 
-  <!-- Contact -->
-  <div class="reference-image"><img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80" alt="Contact workspace" /></div>
-  <section class="contact" id="contact">
-    <form class="contact-form" action="#" method="post">
-      <h2>Contact Us</h2>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Your full name" required />
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Your email address" required />
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <div class="contact-info">
-      <h3>Get in Touch</h3>
-      <p>Los Angeles | New York | Miami | Chicago</p>
-      <p>Email: contact@agency.com</p>
-      <p>Phone: (123) 456-7890</p>
-      <p>Mon - Fri: 9am - 6pm</p>
-    </div>
-  </section>
+  
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-300 py-16">
+  <footer class="bg-gray-900 text-gray-300 px-4 sm:px-6 lg:px-8 py-20">
     <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
       <div>
         <h4 class="text-2xl font-bold mb-4 text-white">AGENCY</h4>
-        <p class="text-gray-400">Crafting memorable brand experiences that connect and inspire.</p>
+        <p class="text-gray-400 mb-4">Crafting memorable brand experiences that connect and inspire.</p>
+        <h5 class="text-lg font-semibold mb-2 text-white">Contact Us</h5>
+        <ul class="text-sm text-gray-400 space-y-1">
+          <li>Email: contact@agency.com</li>
+          <li>Phone: (123) 456-7890</li>
+          <li>Mon - Fri: 9am - 6pm</li>
+        </ul>
       </div>
       <div>
         <h4 class="text-xl font-semibold mb-4 text-white">Navigation</h4>
