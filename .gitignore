@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Created by https://www.toptal.com/developers/gitignore/api/windows,macos,react,node,visualstudiocode,jetbrains
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,react,node,visualstudiocode,jetbrains
 
@@ -349,7 +348,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,react,node,visualstudiocode,jetbrains
-=======
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -373,4 +371,3 @@ $RECYCLE.BIN/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
->>>>>>> f1ccaaca894e0af7bfd33a371b5b7d12782fb257
